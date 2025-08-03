@@ -4,10 +4,11 @@ uvicorn
 gunicorn
 pydantic
 langchain
-langchain-google-genai
+langchain_google_genai
+langchain_groq
 langchain-community
 pinecone-client==4.1.1
 python-dotenv
 sentence-transformers
 PyMuPDF
-langchain-groq
+rank_bm25
