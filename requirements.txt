@@ -12,3 +12,5 @@ python-dotenv
 sentence-transformers
 PyMuPDF
 langchain-groq
+
+gunicorn
