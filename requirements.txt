@@ -1,0 +1,13 @@
+# requirements.txt (Final Corrected Version for Gemini & Groq)
+fastapi
+uvicorn
+pydantic
+langchain
+langchain_google_genai
+langchain_groq
+langchain-community
+pinecone-client==4.1.1
+python-dotenv
+sentence-transformers
+PyMuPDF
+rank_bm25
