@@ -1,13 +1,13 @@
 # requirements.txt (Final Corrected Version for Gemini & Groq)
 fastapi
 uvicorn
+gunicorn
 pydantic
 langchain
-langchain_google_genai
-langchain_groq
+langchain-google-genai
 langchain-community
 pinecone-client==4.1.1
 python-dotenv
 sentence-transformers
 PyMuPDF
-rank_bm25
+langchain-groq
