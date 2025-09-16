@@ -1,7 +1,7 @@
 # Data Engineering with LLM Agents
 
 ## Overview
-This repository presents a robust framework for automating and enhancing data engineering tasks through the strategic integration of Large Language Model (LLM) agents. It provides a modular, scalable, and intelligent approach to managing data lifecycles, from ingestion and retrieval to complex reasoning and processing.
+This repository presents a robust framework for automating and enhancing data engineering tasks through the strategic integration of Large Language Model (LLM) agents. Leveraging powerful libraries such as **LangChain** for agent orchestration and **ChromaDB** for vector storage, this project offers a modular, scalable, and intelligent approach to managing data lifecycles, from ingestion and retrieval to complex reasoning and processing, potentially utilizing **OpenAI** models or other LLM providers.
 
 ## Key Features
 -   **Agent-Based Architecture**: Utilizes specialized LLM agents (Ingestion, Retrieval, Reasoning) to handle distinct data pipeline stages.
@@ -13,13 +13,13 @@ This repository presents a robust framework for automating and enhancing data en
 The project is organized into several distinct Python modules, each playing a crucial role:
 
 -   `main.py`: The central orchestrator, managing agent interactions and the overall application flow.
--   `ingestion_agent.py`: An LLM-powered agent responsible for data intake, initial processing, and preparing data for subsequent steps.
--   `retrieval_agent.py`: Focuses on intelligently fetching relevant information from various data sources using LLM capabilities.
--   `reasoning_agent.py`: Executes complex logical processing, analysis, and decision-making based on retrieved and processed data.
+-   `ingestion_agent.py`: An LLM-powered agent responsible for data intake, initial processing, and preparing data for subsequent steps, often involving vectorization and storage in databases like ChromaDB.
+-   `retrieval_agent.py`: Focuses on intelligently fetching relevant information from various data sources using LLM capabilities, interacting with vector stores (e.g., ChromaDB) to retrieve contextual data.
+-   `reasoning_agent.py`: Executes complex logical processing, analysis, and decision-making based on retrieved and processed data, utilizing LLMs for advanced inferencing.
 -   `schemas.py`: Defines the data structures, ensuring consistency and clear communication across all components.
 -   `utils.py`: A collection of reusable utility functions supporting agent operations and the main application.
 -   `payload.json`: An example configuration file for input data or agent settings.
--   `requirements.txt`: Lists all required Python packages for project execution.
+-   `requirements.txt`: Lists all required Python packages for project execution, including `langchain`, `openai`, `chromadb`, `flask`, `pydantic`, and `python-dotenv`.
 
 ## Getting Started
 
@@ -42,7 +42,7 @@ The project is organized into several distinct Python modules, each playing a cr
     pip install -r requirements.txt
     ```
 4.  **Configuration (Optional):**
-    If the project requires API keys or specific environment variables (e.g., for LLM providers), please set them up according to the instructions (add specific instructions here if applicable).
+    If the project requires API keys or specific environment variables (e.g., for LLM providers like OpenAI), please set them up. Typically, this involves creating a `.env` file in the root directory and adding your keys (e.g., `OPENAI_API_KEY=your_key_here`).
 
 ## Usage
 To run the main application and initiate the LLM agent workflow:
