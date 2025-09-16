@@ -1,4 +1,4 @@
-# Data Engineering with LLM Agents
+# Decision Engine LLM
 
 ## Overview
 This repository presents a robust framework for automating and enhancing data engineering tasks through the strategic integration of Large Language Model (LLM) agents. Leveraging powerful libraries such as **LangChain** for agent orchestration and **ChromaDB** for vector storage, this project offers a modular, scalable, and intelligent approach to managing data lifecycles, from ingestion and retrieval to complex reasoning and processing, potentially utilizing **OpenAI** models or other LLM providers.
@@ -15,6 +15,7 @@ The project is organized into several distinct Python modules, each playing a cr
 -   `main.py`: The central orchestrator, managing agent interactions and the overall application flow.
 -   `ingestion_agent.py`: An LLM-powered agent responsible for data intake, initial processing, and preparing data for subsequent steps, often involving vectorization and storage in databases like ChromaDB.
 -   `retrieval_agent.py`: Focuses on intelligently fetching relevant information from various data sources using LLM capabilities, interacting with vector stores (e.g., ChromaDB) to retrieve contextual data.
+
 -   `reasoning_agent.py`: Executes complex logical processing, analysis, and decision-making based on retrieved and processed data, utilizing LLMs for advanced inferencing.
 -   `schemas.py`: Defines the data structures, ensuring consistency and clear communication across all components.
 -   `utils.py`: A collection of reusable utility functions supporting agent operations and the main application.
@@ -35,7 +36,7 @@ The project is organized into several distinct Python modules, each playing a cr
 2.  **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`
+    source venv/bin/activate  # On Windows use `venv\\\\Scripts\\\\activate`
     ```
 3.  **Install dependencies:**
     ```bash
